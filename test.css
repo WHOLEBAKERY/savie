@@ -1,0 +1,560 @@
+/* General body styling */
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  
+  background: url('https://images.unsplash.com/photo-1560298804-4e4a8ef75fa0?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+  
+  background-size: cover;
+  
+  color: #fff;
+  
+  margin: 0;
+  
+  padding: 0;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  height: 100vh;
+  
+  overflow: hidden;
+  
+  }
+  
+  
+  /* Main app container */
+  
+  #app {
+  
+  width: 100%;
+  
+  max-width: 900px;
+  
+  background: rgba(255, 255, 255, 0.9);
+  
+  color: #333;
+  
+  border-radius: 10px;
+  
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  
+  padding: 20px;
+  
+  box-sizing: border-box;
+  
+  margin: 20px;
+  
+  overflow: auto;
+  
+  max-height: 90vh;
+  
+  scrollbar-width: thin; /* For Firefox */
+  
+  }
+  
+  
+  /* Scrollbar styling for Webkit browsers */
+  
+  #app::-webkit-scrollbar {
+  
+  width: 12px;
+  
+  }
+  
+  
+  #app::-webkit-scrollbar-track {
+  
+  background: #f1f1f1;
+  
+  border-radius: 10px;
+  
+  }
+  
+  
+  #app::-webkit-scrollbar-thumb {
+  
+  background: #888;
+  
+  border-radius: 10px;
+  
+  }
+  
+  
+  #app::-webkit-scrollbar-thumb:hover {
+  
+  background: #555;
+  
+  }
+  
+  
+  /* Header styling */
+  
+  header {
+  
+  text-align: center;
+  
+  padding-bottom: 20px;
+  
+  }
+  
+  
+  /* Main title styling */
+  
+  h1 {
+  
+  color: #333;
+  
+  font-weight: 700;
+  
+  font-size: 2.5em;
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  }
+  
+  
+  /* Section titles styling */
+  
+  h2 {
+  
+  color: #555;
+  
+  margin-top: 20px;
+  
+  font-weight: 700;
+  
+  font-size: 1.5em;
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  }
+  
+  
+  /* Card container styling */
+  
+  .card {
+  
+  background: #f8f9fa;
+  
+  border-radius: 8px;
+  
+  padding: 20px;
+  
+  margin-top: 20px;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  
+  overflow: auto;
+  
+  max-height: 400px;
+  
+  }
+  
+  
+  /* Form styling */
+  
+  #transaction-form {
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  align-items: flex-start;
+  
+  }
+  
+  
+  /* Form elements styling */
+  
+  #transaction-form label, #transaction-form input, #transaction-form select, #transaction-form button {
+  
+  margin: 5px 0;
+  
+  }
+  
+  
+  /* Input and select styling */
+  
+  #transaction-form input, #transaction-form select {
+  
+  padding: 10px;
+  
+  border: 1px solid #ccc;
+  
+  border-radius: 5px;
+  
+  width: 100%;
+  
+  }
+  
+  
+  /* Submit button styling */
+  
+  #transaction-form button {
+  
+  background: linear-gradient(135deg, #56CCF2, #2F80ED);
+  
+  color: white;
+  
+  border: none;
+  
+  padding: 10px 20px;
+  
+  cursor: pointer;
+  
+  transition: background 0.3s, box-shadow 0.3s;
+  
+  border-radius: 5px;
+  
+  align-self: flex-start;
+  
+  display: flex;
+  
+  align-items: center;
+  
+  font-weight: 700;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  
+  /* Submit button hover effect */
+  
+  #transaction-form button:hover {
+  
+  background: linear-gradient(135deg, #2F80ED, #56CCF2);
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  
+  }
+  
+  
+  /* Material icon styling inside buttons */
+  
+  #transaction-form button .material-icons {
+  
+  margin-right: 5px;
+  
+  }
+  
+  
+  /* Clear history button styling */
+  
+  #clear-history {
+  
+  background: red;
+  
+  color: white;
+  
+  border: none;
+  
+  border-radius: 50%;
+  
+  width: 50px;
+  
+  height: 50px;
+  
+  cursor: pointer;
+  
+  position: fixed;
+  
+  bottom: 20px;
+  
+  right: 20px;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  transition: background 0.3s, box-shadow 0.3s;
+  
+  }
+  
+  
+  /* Clear history button hover effect */
+  
+  #clear-history:hover {
+  
+  background: darkred;
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  
+  /* Clear balance button styling */
+  
+  #clear-balance {
+  
+  background: green;
+  
+  color: white;
+  
+  border: none;
+  
+  border-radius: 50%;
+  
+  width: 50px;
+  
+  height: 50px;
+  
+  cursor: pointer;
+  
+  position: fixed;
+  
+  bottom: 20px;
+  
+  right: 80px;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  transition: background 0.3s, box-shadow 0.3s;
+  
+  }
+  
+  
+  /* Clear balance button hover effect */
+  
+  #clear-balance:hover {
+  
+  background: darkgreen;
+  
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  
+  }
+  
+  
+  /* Error message styling */
+  
+  .error {
+  
+  color: red;
+  
+  display: none;
+  
+  font-weight: bold;
+  
+  }
+  
+  
+  /* User setup modal styling */
+  
+  .modal {
+  
+  display: none;
+  
+  position: fixed;
+  
+  top: 0;
+  
+  left: 0;
+  
+  width: 100%;
+  
+  height: 100%;
+  
+  background: rgba(0, 0, 0, 0.5);
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  }
+  
+  
+  .modal-content {
+  
+  background: white;
+  
+  padding: 20px;
+  
+  border-radius: 10px;
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  text-align: center;
+  
+  width: 300px;
+  
+  }
+  
+  
+  .modal-content h2 {
+  
+  margin-bottom: 20px;
+  
+  font-family: 'Open Sans', sans-serif;
+  
+  }
+  
+  
+  .modal-content form {
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  align-items: center;
+  
+  }
+  
+  
+  .modal-content form label,
+  
+  .modal-content form input,
+  
+  .modal-content form button {
+  
+  margin: 10px 0;
+  
+  }
+  
+  
+  .modal-content form input[type="text"] {
+  
+  padding: 10px;
+  
+  border: 1px solid #ccc;
+  
+  border-radius: 5px;
+  
+  width: 100%;
+  
+  }
+  
+  
+  .modal-content form input[type="file"] {
+  
+  border: none;
+  
+  }
+  
+  
+  .modal-content form button {
+  
+  padding: 10px 20px;
+  
+  background: linear-gradient(135deg, #56CCF2, #2F80ED);
+  
+  color: white;
+  
+  border: none;
+  
+  border-radius: 5px;
+  
+  cursor: pointer;
+  
+  font-weight: 700;
+  
+  transition: background 0.3s, box-shadow 0.3s;
+  
+  }
+  
+  
+  .modal-content form button:hover {
+  
+  background: linear-gradient(135deg, #2F80ED, #56CCF2);
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  }
+  
+  
+  /* Cancel button styling */
+  
+  .modal-content form button[type="button"] {
+  
+  background: #ccc;
+  
+  color: #333;
+  
+  }
+  
+  
+  .modal-content form button[type="button"]:hover {
+  
+  background: #aaa;
+  
+  }
+  
+  
+  /* Profile picture preview container */
+  
+  #preview-container, #bg-preview-container {
+  
+  margin: 10px 0;
+  
+  display: flex;
+  
+  justify-content: center;
+  
+  align-items: center;
+  
+  }
+  
+  
+  .profile-picture {
+  
+  width: 40px;
+  
+  height: 40px;
+  
+  border-radius: 50%;
+  
+  object-fit: cover;
+  
+  border: 2px solid #333;
+  
+  margin-left: 10px;
+  
+  }
+  
+  
+  /* Change user info button styling */
+  
+  .change-btn {
+  
+  padding: 10px 20px;
+  
+  background: linear-gradient(135deg, #56CCF2, #2F80ED);
+  
+  color: white;
+  
+  border: none;
+  
+  border-radius: 5px;
+  
+  cursor: pointer;
+  
+  font-weight: 700;
+  
+  transition: background 0.3s, box-shadow 0.3s;
+  
+  margin-top: 10px;
+  
+  }
+  
+  
+  .change-btn:hover {
+  
+  background: linear-gradient(135deg, #2F80ED, #56CCF2);
+  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  
+  }

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stealth Savings Plan</title>
+
+<link rel="stylesheet" href="test.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="icon" href="Skate.png">
+
+</head>
+
+<body>
+
+<div id="app">
+
+<header>
+
+<h1>Stealth Savings Plan</h1>
+
+</header>
+
+<main>
+
+<section id="user-info">
+
+<h2>User Information</h2>
+
+<div id="user-details" class="card"></div>
+
+<button id="change-user-info" class="change-btn">Change Info</button>
+
+<button id="change-bg" class="change-btn">Change Background</button>
+
+</section>
+
+<section id="transactions">
+
+<h2>Transactions</h2>
+
+<form id="transaction-form">
+
+<label for="transaction-type">Type:</label>
+
+<select id="transaction-type" required>
+
+<option value="deposit">Deposit</option>
+
+<option value="withdrawal">Withdrawal</option>
+
+</select>
+
+<label for="transaction-amount">Amount:</label>
+
+<input type="number" id="transaction-amount" min="0.01" step="0.01" required>
+
+<button type="submit">
+
+<span class="material-icons">send</span> Submit
+
+</button>
+
+</form>
+
+<div id="transaction-history" class="card"></div>
+
+<button id="clear-history" title="Clear History">
+
+<span class="material-icons">delete</span>
+
+</button>
+
+<button id="clear-balance" title="Clear Balance">
+
+<span class="material-icons">clear</span>
+
+</button>
+
+<p id="error-message" class="error"></p>
+
+</section>
+
+<section id="history-log">
+
+<h2>History Log</h2>
+
+<div id="history-log-details" class="card"></div>
+
+</section>
+
+</main>
+
+</div>
+
+
+<!-- Modal for initial user setup -->
+
+<div id="user-setup-modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Welcome! Set up your profile</h2>
+
+<form id="user-setup-form">
+
+<label for="user-name">Name:</label>
+
+<input type="text" id="user-name" required>
+
+<label for="user-picture">Profile Picture:</label>
+
+<input type="file" id="user-picture" accept="image/*" required>
+
+<div id="preview-container"></div>
+
+<button type="submit">Save</button>
+
+<button type="button" id="cancel-setup">Cancel</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<!-- Modal for background setup -->
+
+<div id="bg-setup-modal" class="modal">
+
+<div class="modal-content">
+
+<h2>Change Background</h2>
+
+<form id="bg-setup-form">
+
+<label for="bg-picture">Background Picture:</label>
+
+<input type="file" id="bg-picture" accept="image/*" required>
+
+<div id="bg-preview-container"></div>
+
+<button type="submit">Save</button>
+
+<button type="button" id="cancel-bg">Cancel</button>
+
+</form>
+
+</div>
+
+</div>
+
+
+<script src="sus.js"></script>
+
+</body>
+
+<!-- Allison coordinated this fr -->
+
+</html>
+
